@@ -1,5 +1,9 @@
 $(document).ready(function() {
     $('#everpsquotationform').on('submit', function(event) {
+
+        alert('Pour otenir votre devis veuillez ajouter le produit au panier, une fois sur le panier vous pourrez cliquer sur "Télécharger Un Devis"');
+        return false;
+
         event.preventDefault();
         var formData = $(this).serialize();
         $.ajax({
